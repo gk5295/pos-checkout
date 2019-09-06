@@ -1,0 +1,3 @@
+INSERT INTO "products"("name", "description", "type", "price") VALUES('Small Pizza', '10” pizza for one person', 'small', '269.99') RETURNING "id", "name", "description", "type", "price", "createdAt", "updatedAt";
+INSERT INTO "products"("name", "description", "type", "price") VALUES('Medium Pizza', '12” pizza for two people', 'medium', '322.99') RETURNING "id", "name", "description", "type", "price", "createdAt", "updatedAt";
+INSERT INTO "products"("name", "description", "type", "price") VALUES('Large Pizza', '15” pizza for four people', 'large', '394.99') RETURNING "id", "name", "description", "type", "price", "createdAt", "updatedAt";

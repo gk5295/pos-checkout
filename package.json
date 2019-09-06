@@ -1,0 +1,50 @@
+{
+  "name": "pos-checkout",
+  "private": false,
+  "version": "1.0.0",
+  "description": "Simple checkout service",
+  "keywords": [],
+  "scripts": {
+    "start": "node server.js",
+    "lint": "eslint src test",
+    "lint:fix": "eslint --fix src test",
+    "test": "yarn lint && NODE_ENV=test && mocha"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/avdkishore/pos-checkout"
+  },
+  "author": "A.V.D.Kishore <avdkishore@gmail.com>",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/avdkishore/pos-checkout/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "pg": "^7.12.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.16.0"
+  },
+  "devDependencies": {
+    "async": "^3.1.0",
+    "chai": "^4.2.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.1.3",
+    "eslint-config-prettier": "^1.6.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "faker": "^3.0.1",
+    "glob": "^7.1.4",
+    "mocha": "^6.2.0",
+    "nyc": "^11.7.1",
+    "prettier": "^1.1.0",
+    "sinon": "^1.17.3",
+    "supertest": "^3.0.0"
+  }
+}
